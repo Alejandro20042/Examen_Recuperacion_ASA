@@ -5,19 +5,35 @@
         static void Main(string[] args)
         {
            ListaEnlazada flota = new ListaEnlazada();
-            flota.AgregarCarro(new Carros(123,"Toyota",2023));
-            flota.AgregarCarro(new Carros(223, "Silverado", 2022));
-            flota.AgregarCarro(new Carros(412, "Ram", 2026));
-            flota.AgregarCarro(new Carros(764, "Chevrolet", 2018));
-            flota.AgregarCarro(new Carros(669, "Munstang", 2025));
 
-            
-            flota.ImprimirPorAño();
+Console.WriteLine("1 Agregar Carro");
+Console.WriteLine("2 Buscar Carro");
+Console.WriteLine("3 Ordenar Carro");
 
-            flota.OrdenarPorAño();
 
-            Console.WriteLine($"Se encontro el Carro{flota.BuscarCarro("Toyota")}");
-            flota.BuscarCarro("Toyota");
+int opciones = 0;
+
+while (opciones == null)
+{
+    switch (opciones)
+    {
+        case 0:
+            Console.WriteLine($"Agregar Carro");
+
+            break;
+        case 1:
+            Console.WriteLine("Buscar Carro:");
+            break;
+        case 2:
+            Console.WriteLine("Imprimir:");
+            break;
+        case 3:
+            Console.WriteLine("Ordenar");
+            break;
+    }
+
+}
+/*El usuario tiene que ingresar los datos como año, carro y modelo*/
         }
     }
 }
